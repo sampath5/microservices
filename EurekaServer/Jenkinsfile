@@ -8,16 +8,16 @@ pipeline{
     stages {
         stage('clean') {
             steps {
-              bat 'cd\'
-              bat 'C:\jenkins\workspace\Eurekaserver\EurekaServer'
+              
+              bat 'cd C:\jenkins\workspace\Eurekaserver\EurekaServer'
                 sh 'mvn clean'
             }
         }
         stage('build and test') {
             steps {
               
-              sh 'cd\'
-              sh 'C:\jenkins\workspace\Eurekaserver\EurekaServer'
+             
+              sh 'cd C:\jenkins\workspace\Eurekaserver\EurekaServer'
                 sh 'mvn package'
             }
         }
