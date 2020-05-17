@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1589354123119_0" label="Java Main Sources" name="Java Main Sources">
+<item elementID="=EurekaServer/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=EurekaServer/src\/main\/resources=/maven.pomderived=/true=/" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=API-Zuul-Gateway/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=API-Zuul-Gateway/src\/main\/resources=/maven.pomderived=/true=/" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=API-Spring-Gateway/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=API-Spring-Gateway/src\/main\/resources=/maven.pomderived=/true=/" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=CloudCongifServer/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=CloudCongifServer/src\/main\/resources=/maven.pomderived=/true=/" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=HystrixDashboard/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=HystrixDashboard/src\/main\/resources=/maven.pomderived=/true=/" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=Order/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=Order/src\/main\/resources=/maven.pomderived=/true=/" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=Payment/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=Payment/src\/main\/resources=/maven.pomderived=/true=/" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=ThirdPartyService/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=ThirdPartyService/src\/main\/resources=/maven.pomderived=/true=/" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1589354123286_1" label="Java Test Sources" name="Java Test Sources">
+<item elementID="=EurekaServer/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=API-Zuul-Gateway/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=API-Spring-Gateway/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=CloudCongifServer/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=HystrixDashboard/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=Order/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=Payment/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=ThirdPartyService/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1589354130151_2" label="Window Working Set" name="Aggregate for window 1589354130150"/>
+</workingSetManager>
