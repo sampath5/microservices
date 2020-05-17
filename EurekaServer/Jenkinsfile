@@ -9,7 +9,7 @@ pipeline{
         stage('clean') {
             steps {
               
-              bat 'cd C:\jenkins\workspace\Eurekaserver\EurekaServer'
+              bat 'cd /EurekaServer'
                 sh 'mvn clean'
             }
         }
@@ -17,7 +17,7 @@ pipeline{
             steps {
               
              
-              sh 'cd C:\jenkins\workspace\Eurekaserver\EurekaServer'
+              sh 'cd /EurekaServer'
                 sh 'mvn package'
             }
         }
