@@ -9,7 +9,7 @@ pipeline{
         stage('clean') {
             steps {
               
-              bat 'cd EurekaServer'
+              sh 'cd EurekaServer'
                 sh 'mvn clean'
             }
         }
