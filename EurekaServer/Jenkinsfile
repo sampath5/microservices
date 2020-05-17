@@ -8,15 +8,11 @@ pipeline{
     stages {
         stage('clean') {
             steps {
-              
-              sh 'cd EurekaServer'
                 sh 'mvn clean'
             }
         }
         stage('build and test') {
             steps {
-              
-             
                  sh 'mvn package'
             }
         }
