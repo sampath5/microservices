@@ -9,7 +9,7 @@ pipeline{
         stage('clean') {
             steps {
               
-              bat 'cd /EurekaServer'
+              bat 'cd EurekaServer'
                 sh 'mvn clean'
             }
         }
@@ -17,8 +17,7 @@ pipeline{
             steps {
               
              
-              sh 'cd /EurekaServer'
-                sh 'mvn package'
+                 sh 'mvn package'
             }
         }
         stage('Building image') {
