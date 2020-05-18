@@ -1,6 +1,6 @@
 pipeline{
   environment {
-    registry = "sampath5/Orderservice"
+    registry = "sampath5/orderservice"
     registryCredential = 'dockerhub'
     dockerImage = ''
   }
