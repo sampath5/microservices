@@ -1,38 +1,17 @@
-pipeline{
-  environment {
-    registry = "sampath5/orderservice"
-    registryCredential = 'dockerhub'
-    dockerImage = ''
-  }
-  agent any
-    stages {
-        stage('clean') {
-            steps {
-                sh 'cd Order'
-                sh 'mvn clean'
-            }
-        }
-        stage('build and test') {
-            steps {
-                 sh 'mvn package'
-            }
-        }
-        stage('Building image') {
-            steps{
-                script {
-                  
-                  dockerImage = docker.build registry + ":$BUILD_NUMBER"
-                }
-             }
-          }
-          stage('Push Image') {
-              steps{
-                  script {
-                      docker.withRegistry( '', registryCredential ) {
-                        dockerImage.push()
-                      }
-                  }
-              }
-            }
-      }
+node {
+
+ checkout scm
+
+    docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
+        dir ('Order') {
+          bat 'mvn clean'
+            bat 'mvn package'
+       def customImage = docker.build("sampath5/micro")
+
+        / Push the container to the custom Registry /
+      customImage.push()
+    }
 }
+}
+
+
