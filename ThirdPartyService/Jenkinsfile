@@ -1,0 +1,41 @@
+pipeline{
+  environment {
+    registry = "sampath5/thirdpartyservice"
+    registryCredential = 'dockerhub'
+    dockerImage = ''
+  }
+  agent any
+    stages {
+        stage('cd'){   
+        steps {
+          sh '${pwd()}'
+          dir('your-sub-directory'){
+            sh '${pwd()}'
+          }
+          sh '${pwd()}'
+        } 
+        }
+        stage('build and test') {
+            steps {
+                 sh 'mvn package'
+            }
+        }
+        stage('Building image') {
+            steps{
+                script {
+                  
+                  dockerImage = docker.build registry + ":latest"
+                }
+             }
+          }
+          stage('Push Image') {
+              steps{
+                  script {
+                      docker.withRegistry( '', registryCredential ) {
+                        dockerImage.push()
+                      }
+                  }
+              }
+            }
+      }
+}
