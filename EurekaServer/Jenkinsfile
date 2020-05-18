@@ -8,6 +8,7 @@ pipeline{
     stages {
         stage('clean') {
             steps {
+                sh 'cd EurekaServer'
                 sh 'mvn clean'
             }
         }
