@@ -1,17 +1,15 @@
 node{
-  environment {
-    registry = "sampath5/orderservice"
-    registryCredential = 'dockerhub'
-    dockerImage = ''
-  }
+  //environment {
+    //registry = "sampath5/orderservice"
+    //registryCredential = 'dockerhub'
+    //dockerImage = ''
+  //}
   agent any
     stages {
         stage('clean') {
             steps {
-              sh 'mvn clean package'
-              def pom = readMavenPom file:'pom.xml'
-               print pom.version
-              env.version = pom.version
+              
+              
                 
             }
         }
@@ -20,7 +18,11 @@ node{
             steps{
                 script {
                    dir ('Order') {
-                  dockerImage = docker.build registry + "${env.version}"
+                     sh 'mvn clean package'
+                     def pom = readMavenPom file:'pom.xml'
+               print pom.version
+              env.version = pom.version
+                  dockerImage = docker.build 'sampath5/thirdps' + "${env.version}"
                 }
                 }
              }
